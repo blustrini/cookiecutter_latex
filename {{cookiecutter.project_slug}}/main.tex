@@ -1,0 +1,49 @@
+\documentclass[10pt]{article}
+
+% layout
+\usepackage[a4paper, margin=6em]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage{pdfpages}
+\usepackage{placeins}
+\usepackage{lipsum}  
+\usepackage{multirow}
+
+% images
+\usepackage{caption}
+\usepackage{graphicx}
+\graphicspath{ {figures} }
+
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{1em}
+
+% maths
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{bm}
+\usepackage{esdiff}
+\DeclareMathOperator*{\argmax}{arg\,max}
+\DeclareMathOperator*{\argmin}{arg\,min}
+\DeclareMathOperator{\sign}{sign}
+\newcommand{\labeleq}[1]{\stepcounter{equation}\tag{\theequation}\label{#1}}
+
+% hyperlinks
+\usepackage{hyperref}
+\hypersetup{
+    colorlinks=true,
+    linktoc=all,
+    linkcolor=black,
+}
+
+% metadata
+\title{{{cookiecutter.project_name}}}
+\author{{{cookiecutter.full_name}}}
+
+% bib
+\usepackage[sortcites=true]{biblatex}
+\addbibresource{{{cookiecutter.project_slug}}.bib}
+
+% report
+\begin{document}
+\maketitle
+
+\end{document}
