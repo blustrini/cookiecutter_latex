@@ -9,6 +9,6 @@
 *.bcf
 *.blg
 *.xml
-{% if not cookiecutter.commit_pdfs %}
+{% if not cookiecutter.commit_pdfs -%}
 *.pdf
 {% endif %}
